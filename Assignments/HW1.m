@@ -1,5 +1,4 @@
-% 2017117876 ±è½ÂÇö
-function exp_2017117876(xmin,xmax,data,a,n)
+function exp(xmin,xmax,data,a,n)
 x = linspace(xmin,xmax,data);
 y = zeros(1,data);
 for ncount=0:1:n
