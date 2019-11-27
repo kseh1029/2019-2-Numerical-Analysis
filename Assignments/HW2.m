@@ -1,5 +1,4 @@
-% 2017117876 ±è½ÂÇö
-function [eig_val, eig_vec] = power_2017117876(A, es, maxit)
+function [eig_val, eig_vec] = power(A, es, maxit)
 if nargin<2 || isempty(es), es = 0.05; end
 if nargin<3 || isempty(maxit), maxit = 100; end
 sizetest = size(A);
@@ -9,7 +8,7 @@ end
 if issymmetric(A) == false
     error ('Matrix A Must be Symmetric.');
 end
-x = ones(sizetest(1),1); % sizetest(1) = sizetest(2) ÀÎ°Ç °ËÁõµÇ¾úÀ¸¹Ç·Î, ±×¿¡ ¸Â´Â ÃÊ±â¿­º¤ÅÍ¸¦ ¸¸µç´Ù. ÃÊ±â°ªÀº 1·Î.
+x = ones(sizetest(1),1); % sizetest(1) = sizetest(2) ì¸ê±´ ê²€ì¦ë˜ì—ˆìœ¼ë¯€ë¡œ, ê·¸ì— ë§žëŠ” ì´ˆê¸°ì—´ë²¡í„°ë¥¼ ë§Œë“ ë‹¤. ì´ˆê¸°ê°’ì€ 1ë¡œ.
 iter = 1;
 
 sel = input('Eigen value: 1. largest 2. smallest ? ');
