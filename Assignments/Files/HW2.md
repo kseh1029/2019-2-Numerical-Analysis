@@ -59,11 +59,19 @@ end
         end
 
 switch sel
+
     case 1 % Max eigenvalue
+    
         eig_val = lamda;
+        
         eig_vec = x;
+        
     case 2 % Min eigenvalue
+    
         eig_val = 1/lamda;
+        
         eig_vec = x;
+        
 end
+
 end
